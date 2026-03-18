@@ -1,0 +1,204 @@
+Tech-Genesis-2026-National-Level-Online-Technical-Symposium-
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Commit a3ec18b
+dineshkumar-cyber20
+dineshkumar-cyber20
+authored
+5 days ago
+Verified
+Create index.html
+main
+1 parent 
+f44cb88
+ commit 
+a3ec18b
+File tree
+Filter files…
+index.html
+1 file changed
++218
+-0
+lines changed
+Search within code
+ 
+‎index.html‎
++218
+Lines changed: 218 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TECH-GENESIS 2026</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    margin:0;
+}
+header{
+    background:#0b4ea2;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.container{
+    width:80%;
+    margin:auto;
+    background:white;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+h2{
+    color:#0b4ea2;
+}
+label{
+    font-weight:bold;
+}
+input, select{
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+}
+button{
+    padding:10px 20px;
+    margin-top:10px;
+    border:none;
+    background:#0b4ea2;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+button:hover{
+    background:#06357a;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+th, td{
+    border:1px solid #ccc;
+    padding:8px;
+    text-align:center;
+}
+th{
+    background:#0b4ea2;
+    color:white;
+}
+footer{
+    text-align:center;
+    padding:15px;
+    background:#eee;
+    margin-top:20px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>TECH-GENESIS 2026</h1>
+<h3>National Level Virtual Technical Symposium</h3>
+<p><b>Topic:</b> The AI & Full-Stack Revolution</p>
+<p><b>Date:</b> March 25, 2026 | <b>Time:</b> 09:30 AM - 04:30 PM</p>
+<p><b>Venue:</b> Online (Virtual Meeting Link will be shared via Email)</p>
+<p><b>Organizer:</b> AdrolT Technologies Innovative Solutions Pvt LTD</p>
+</header>
+<div class="container">
+<h2>Personal Information</h2>
+<form id="regForm">
+<label>Full Name</label>
+<input type="text" id="name" required>
+<label>Email Address</label>
+<input type="email" id="email" required>
+<label>Phone Number</label>
+<input type="tel" id="phone" required>
+<label>Gender</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<br><br>
+<h2>Event Selection</h2>
+<label>Select Workshop Track</label>
+<select id="event">
+<option>Full-Stack Web Development</option>
+<option>Artificial Intelligence</option>
+<option>Cyber Security</option>
+</select>
+<label>Participation Mode</label>
+<select id="mode">
+<option>Online (Virtual)</option>
+<option>Offline (On-Campus)</option>
+</select>
+<h2>Additional Details</h2>
+<label>College Name</label>
+<input type="text" id="college">
+<label>Upload ID Proof</label>
+<input type="file">
+<label>Any Specific Expectations?</label>
+<input type="text">
+<br>
+<input type="checkbox" required>
+I confirm that the above details are correct
+<br>
+<button type="button" onclick="register()">Register Now</button>
+<button type="reset">Reset Form</button>
+</form>
+<h2>Currently Registered Participants</h2>
+<table id="participants">
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Event</th>
+<th>Mode</th>
+</tr>
+<tr>
+<td>Arun Kumar</td>
+<td>arunkumar.it@gmail.com</td>
+<td>94440 12345</td>
+<td>Web Development</td>
+<td>Online</td>
+</tr>
+</table>
+</div>
+<footer>
+Support Email: support.techgenesis@adroit.edu.in |
+Help Desk: +91 44 2250 1234
+<br><br>
+© 2026 AdrolT Technologies Innovative Solutions Pvt LTD. All Rights Reserved.
+</footer>
+<script>
+function register(){
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let phone=document.getElementById("phone").value;
+let event=document.getElementById("event").value;
+let mode=document.getElementById("mode").value;
+if(name=="" || email=="" || phone==""){
+alert("Please fill all required fields");
+return;
+}
+let table=document.getElementById("participants");
+let row=table.insertRow();
+row.insertCell(0).innerHTML=name;
+row.insertCell(1).innerHTML=email;
+row.insertCell(2).innerHTML=phone;
+row.insertCell(3).innerHTML=event;
+row.insertCell(4).innerHTML=mode;
+alert("Registration Successful!");
+document.getElementById("regForm").reset();
+}
+</script>
+</body>
+</html>
