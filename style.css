@@ -1,0 +1,2 @@
+body{    font-family: Arial, sans-serif;    margin:0;    background-image:url("https://images.unsplash.com/photo-1518770660439-4636190af475");    background-size:cover;    background-position:center;    background-repeat:no-repeat;}/* Form container transparency */.container{    width:80%;    margin:auto;    background:rgba(255,255,255,0.9);    padding:20px;    margin-top:20px;    border-radius:10px;    box-shadow:0px 0px 10px rgba(0,0,0,0.3);}
+0 commit commentsComments0 (0)Lock conversation
